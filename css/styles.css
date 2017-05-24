@@ -1,0 +1,8 @@
+@import "normalize.css";
+@import "boostrap";
+@import "bootstrap-select";
+@import "font-awesome";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_custom";
+
