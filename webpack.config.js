@@ -6,14 +6,16 @@ module.exports = {
 	plugins: [
 
 	new webpack.ProvidePlugin({
+		  d3: 'd3',
 		  $: 'jquery',
 		  jQuery: 'jquery',
 		})
 	],
 
-	entry: "./js/app.js",					// Where webpack starts looking
+
+	entry: "./scripts/App.js",
 	output: {
 		path: path.resolve(__dirname, 'temp'),
-		filename: "final.js"
+		filename: "Compiled.js"
 	}
 }

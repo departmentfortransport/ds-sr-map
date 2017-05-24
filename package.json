@@ -1,42 +1,46 @@
 {
-  "name": "boilerplate",
+  "name": "d3-tutorial",
   "version": "1.0.0",
-  "description": "Boilerplate web development files",
-  "main": "index.js",
+  "description": "",
+  "main": "scripts/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tommo565/web-boilerplate.git"
+    "url": "git+https://github.com/Tommo565/d3-tutorial.git"
   },
   "author": "Tom Ewing",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tommo565/web-boilerplate/issues"
+    "url": "https://github.com/Tommo565/d3-tutorial/issues"
   },
-  "homepage": "https://github.com/Tommo565/web-boilerplate#readme",
+  "homepage": "https://github.com/Tommo565/d3-tutorial#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "bootstrap-select": "^1.12.2",
-    "font-awesome": "^4.7.0",
-    "highcharts": "^5.0.7",
-    "jquery": "^3.1.1",
-    "normalize.css": "^5.0.0"
+    "d3": "^4.8.0",
+    "d3-webpack-loader": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "jquery": "^3.2.1",
+    "normalize.css": "^6.0.0",
+    "pyrsmk-w": "^1.7.0",
+    "webpack": "^2.5.1"
   },
   "devDependencies": {
-    "autoprefixer": "^6.7.6",
+    "autoprefixer": "^6.7.7",
     "browser-sync": "^2.18.8",
+    "d3-webpack-loader": "^0.1.1",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-postcss": "^6.3.0",
+    "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-svg-sprite": "^1.3.1",
     "gulp-watch": "^4.3.11",
     "postcss-import": "^9.1.0",
     "postcss-mixins": "^5.4.1",
-    "postcss-nested": "^1.0.0",
-    "postcss-simple-vars": "^3.0.0",
-    "webpack": "^2.2.1"
+    "postcss-nested": "^1.0.1",
+    "postcss-simple-vars": "^3.1.0",
+    "webpack": "^2.5.1"
   }
 }
