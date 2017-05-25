@@ -25,6 +25,13 @@ gulp.task('watch', function () {                                    // Gulp-watc
         gulp.start('scriptsRefresh');                                      // Input the task to perform (defined above) 
     });
 
+
+    // watch .json files
+    watch('./scripts/**/*.json', function () {                        // ** will look in all sub directories. *.css will find all js files
+        gulp.start('scriptsRefresh');                                      // Input the task to perform (defined above) 
+    });
+
+
     // browsersync webserver
     browserSync.init({                                              // BrowserSync creates a web server to watch for changes to our files
         server: {
