@@ -1,22 +1,36 @@
-// Import data
+// Modules
 
-var locData = require('./locData');
-
-console.log(locData.data);
+var tip = require('d3-tip');
 
 // Render Map
 
 var url = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
 var width = $('#map1-container').width();
 var height = 1000;
+var tooltip = tip()
+	.attr('class', 'd3-tooltip')
+	.offset([-10, 0])
+	.html(function(d) {
+		return "<strong>Latitude:</strong> <span style='color:red'>" + d.LatFinal + "</span><br/>" +
+			   "<strong>Longitude:</strong> <span style='color:red'>" + d.LongFinal + "</span><br/>" +
+			   "<strong>Category:</strong> <span style='color:red'>" + d.DfTCat + "</span><br/>" +
+			   "<strong>Outcome:</strong> <span style='color:red'>" + d.TaskingOutcome + "</span><br/>"
+		;
+	});
 
 var map1 = d3.select("#map1-container").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+map1.call(tooltip);							// Initialise the tooltip
+
 d3.json(url, function(error, json) {		// Calulating & rendering the json
 
 	if (error) return console.warn(error);
+
+	// Tooltip
+
+
 
 	// Initial path calculation
 
@@ -31,7 +45,6 @@ d3.json(url, function(error, json) {		// Calulating & rendering the json
 
 	var path = d3.geoPath()
 	    .projection(projection);		// Creating the path
-
 
 	// Enhanced path calculation
 
@@ -51,7 +64,11 @@ d3.json(url, function(error, json) {		// Calulating & rendering the json
 	// Rendering the map
 
 	map1.append("path")
+		.attr("class","map1")
 		.attr("d", path(json))
+		.attr("fill","#d3df9a")
+		.attr("stroke", "#41423b")
+		.attr("stroke-width", "0.3");
 
 	// Appending a boundary box
 
@@ -62,9 +79,63 @@ d3.json(url, function(error, json) {		// Calulating & rendering the json
 
  	// Rendering the location data
 
- 	
 
-	d3.json(locData.data, function(error, data) {
+	d3.json('https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs.json?token=AQcJMOSB1lpNSxfdx54WUhz3WjM7japgks5ZNp6XwA%3D%3D', function(error, data) {
+
+		map1.selectAll("dot")
+			.data(data)
+			.enter()
+			.append("circle", "dot")
+			.attr("r", 3)
+			.attr("fill","steelblue")
+			.attr('fill-opacity', 0.5)
+			.attr("stroke", "#41423b")
+			.attr("stroke-width","0.3")
+			.attr("transform", function(d) {
+				return "translate(" + projection([
+					d.LongFinal,
+					d.LatFinal
+				]) + ")"
+			})
+
+			// Mousover Interactivity
+
+			// .on("mouseover", function(d) {
+			// 	d3.select(this)
+			// 		.transition()
+			// 	    .duration(100)
+			// 	    .attr("r", 10)
+			// 	    .attr('fill-opacity', 1)
+
+			// })
+
+
+			// Tooltip Interactivity
+    	
+    		.on("mouseover", function(d) {
+
+				tooltip.show(d);
+
+        		d3.select(this)
+		        	.transition()
+				    .duration(100)
+				    .attr("r", 10)
+				    .attr('fill-opacity', 1)
+    		})
+
+
+			// Mouseout Interactivity
+
+			.on("mouseout", function(d) {
+
+				d3.select(this)
+					.transition()
+				    .duration(100)
+				    .attr("r", 3)
+				    .attr('fill-opacity', 0.5)
+
+        			tooltip.hide();
+			})
 
 	});
 

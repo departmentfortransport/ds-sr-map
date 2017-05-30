@@ -28,8 +28,10 @@
 
 // UK Example
 
+
+
 var width = $('#map1-container').width();
-var height = 1160;
+var height = 1100;
 
 var projection = d3.geoMercator()
     .scale(width / 2 / Math.PI)
