@@ -141,6 +141,12 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 	d3.json(dataUrl, function(error, data) {
 
+		// Bases
+
+		
+
+		// Search & rescue locations
+
 		g.selectAll("dot")
 			.data(data)
 			.enter()
