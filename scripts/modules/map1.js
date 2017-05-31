@@ -5,7 +5,7 @@ var tip = require('d3-tip');
 // Data Variables
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
-var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs.json?token=AQcJMOSB1lpNSxfdx54WUhz3WjM7japgks5ZNp6XwA%3D%3D';
+var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMOSB1lpNSxfdx54WUhz3WjM7japgks5ZNp6XwA%3D%3D';
 
 // Dimensions variables
 
