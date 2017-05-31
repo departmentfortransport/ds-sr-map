@@ -2,11 +2,18 @@
 
 var tip = require('d3-tip');
 
-// Render Map
+// Data Variables
 
-var url = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
+var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
+var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs.json?token=AQcJMOSB1lpNSxfdx54WUhz3WjM7japgks5ZNp6XwA%3D%3D';
+
+// Dimensions variables
+
 var width = $('#map1-container').width();
 var height = 1000;
+
+// Tooltip variables
+
 var tooltip = tip()
 	.attr('class', 'd3-tooltip')
 	.offset([-10, 0])
@@ -18,19 +25,19 @@ var tooltip = tip()
 		;
 	});
 
+
+
+// Defining & Rendering the map
+
 var map1 = d3.select("#map1-container").append("svg")
     .attr("width", width)
     .attr("height", height);
 
 map1.call(tooltip);							// Initialise the tooltip
 
-d3.json(url, function(error, json) {		// Calulating & rendering the json
+d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 	if (error) return console.warn(error);
-
-	// Tooltip
-
-
 
 	// Initial path calculation
 
@@ -70,17 +77,9 @@ d3.json(url, function(error, json) {		// Calulating & rendering the json
 		.attr("stroke", "#41423b")
 		.attr("stroke-width", "0.3");
 
-	// Appending a boundary box
-
-	// map1.append("rect")
-	// 	.attr('width', width)
-	// 	.attr('height', height)
- 	// 	.style('stroke', 'black').style('fill', 'none');
-
  	// Rendering the location data
 
-
-	d3.json('https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs.json?token=AQcJMOSB1lpNSxfdx54WUhz3WjM7japgks5ZNp6XwA%3D%3D', function(error, data) {
+	d3.json(dataUrl, function(error, data) {
 
 		map1.selectAll("dot")
 			.data(data)
