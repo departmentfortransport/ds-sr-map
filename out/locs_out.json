@@ -2817,7 +2817,7 @@
     "duration": 14,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd38161",
@@ -2827,7 +2827,7 @@
     "duration": 75,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd39161",
@@ -2837,7 +2837,7 @@
     "duration": 120,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd40161",
@@ -2847,7 +2847,7 @@
     "duration": 281,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd41161",
@@ -2857,7 +2857,7 @@
     "duration": 65,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd42161",
@@ -2867,7 +2867,7 @@
     "duration": 107,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd43161",
@@ -2877,7 +2877,7 @@
     "duration": 16,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd44161",
@@ -2887,7 +2887,7 @@
     "duration": 162,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd45161",
@@ -2897,7 +2897,7 @@
     "duration": 122,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd46161",
@@ -2907,7 +2907,7 @@
     "duration": 161,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd47161",
@@ -2917,7 +2917,7 @@
     "duration": 117,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd48161",
@@ -2927,7 +2927,7 @@
     "duration": 94,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd49161",
@@ -2937,7 +2937,7 @@
     "duration": 217,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd50161",
@@ -2947,7 +2947,7 @@
     "duration": 128,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd51161",
@@ -2957,7 +2957,7 @@
     "duration": 84,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd52161",
@@ -2967,7 +2967,7 @@
     "duration": 96,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd53161",
@@ -2977,7 +2977,7 @@
     "duration": 80,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd54161",
@@ -2987,7 +2987,7 @@
     "duration": 25,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd55161",
@@ -2997,7 +2997,7 @@
     "duration": 265,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd56161",
@@ -3007,7 +3007,7 @@
     "duration": 16,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd57161",
@@ -3017,7 +3017,7 @@
     "duration": 16,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd58161",
@@ -3027,7 +3027,7 @@
     "duration": 97,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd59161",
@@ -3037,7 +3037,7 @@
     "duration": 50,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd60161",
@@ -3047,7 +3047,7 @@
     "duration": 167,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd61161",
@@ -3057,7 +3057,7 @@
     "duration": 57,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd62161",
@@ -3067,7 +3067,7 @@
     "duration": 116,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd63161",
@@ -3077,7 +3077,7 @@
     "duration": 213,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd64161",
@@ -3087,7 +3087,7 @@
     "duration": 51,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd65161",
@@ -3097,7 +3097,7 @@
     "duration": 9,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd66161",
@@ -3107,7 +3107,7 @@
     "duration": 279,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd67161",
@@ -3117,7 +3117,7 @@
     "duration": 133,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd68161",
@@ -3127,7 +3127,7 @@
     "duration": 120,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd69161",
@@ -3137,7 +3137,7 @@
     "duration": 47,
     "outcome": "False Alarm",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd70161",
@@ -3147,7 +3147,7 @@
     "duration": 75,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd71161",
@@ -3157,7 +3157,7 @@
     "duration": 86,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd72161",
@@ -3167,7 +3167,7 @@
     "duration": 128,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd73161",
@@ -3177,7 +3177,7 @@
     "duration": 120,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd74161",
@@ -3187,7 +3187,7 @@
     "duration": 41,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd75161",
@@ -3197,7 +3197,7 @@
     "duration": 54,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd76161",
@@ -3207,7 +3207,7 @@
     "duration": 309,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd77161",
@@ -3217,7 +3217,7 @@
     "duration": 87,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd78161",
@@ -3227,7 +3227,7 @@
     "duration": 35,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd79161",
@@ -3237,7 +3237,7 @@
     "duration": 247,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd80161",
@@ -3247,7 +3247,7 @@
     "duration": 405,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd81161",
@@ -3257,7 +3257,7 @@
     "duration": 46,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd82161",
@@ -3267,7 +3267,7 @@
     "duration": 112,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd83161",
@@ -3277,7 +3277,7 @@
     "duration": 170,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd84161",
@@ -3287,7 +3287,7 @@
     "duration": 243,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd85161",
@@ -3297,7 +3297,7 @@
     "duration": 44,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd86161",
@@ -3307,7 +3307,7 @@
     "duration": 35,
     "outcome": "False Alarm",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd87161",
@@ -3317,7 +3317,7 @@
     "duration": 112,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd88161",
@@ -3327,7 +3327,7 @@
     "duration": 70,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd89161",
@@ -3337,7 +3337,7 @@
     "duration": 78,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd90161",
@@ -3347,7 +3347,7 @@
     "duration": 18,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd91161",
@@ -3357,7 +3357,7 @@
     "duration": 164,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd92161",
@@ -3367,7 +3367,7 @@
     "duration": 14,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd93161",
@@ -3377,7 +3377,7 @@
     "duration": 105,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd94161",
@@ -3387,7 +3387,7 @@
     "duration": 13,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd95161",
@@ -3397,7 +3397,7 @@
     "duration": 25,
     "outcome": "Re-tasked",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd96161",
@@ -3407,7 +3407,7 @@
     "duration": 5,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd97161",
@@ -3417,7 +3417,7 @@
     "duration": 70,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd98161",
@@ -3427,7 +3427,7 @@
     "duration": 224,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd99161",
@@ -3437,7 +3437,7 @@
     "duration": 5,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd100161",
@@ -3447,7 +3447,7 @@
     "duration": 93,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Newq58161",
@@ -10847,7 +10847,7 @@
     "duration": 23,
     "outcome": "Re-tasked",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd102161",
@@ -10857,7 +10857,7 @@
     "duration": 11,
     "outcome": "Stood down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd103161",
@@ -10867,7 +10867,7 @@
     "duration": 99,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd104161",
@@ -10877,7 +10877,7 @@
     "duration": 98,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd105161",
@@ -10887,7 +10887,7 @@
     "duration": 128,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd106161",
@@ -10897,7 +10897,7 @@
     "duration": 15,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd107161",
@@ -10907,7 +10907,7 @@
     "duration": 212,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd108161",
@@ -10917,7 +10917,7 @@
     "duration": 87,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd109161",
@@ -10927,7 +10927,7 @@
     "duration": 37,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd110161",
@@ -10937,7 +10937,7 @@
     "duration": 140,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd111161",
@@ -10947,7 +10947,7 @@
     "duration": 66,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd112161",
@@ -10957,7 +10957,7 @@
     "duration": 70,
     "outcome": "Completed",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd113161",
@@ -10967,7 +10967,7 @@
     "duration": 30,
     "outcome": "Stood down",
     "category": "Rescue/Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd114161",
@@ -10977,7 +10977,7 @@
     "duration": 97,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd115/61",
@@ -10987,7 +10987,7 @@
     "duration": 94,
     "outcome": "Re-tasked",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd116161",
@@ -10997,7 +10997,7 @@
     "duration": 127,
     "outcome": "Completed",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd117161",
@@ -11007,7 +11007,7 @@
     "duration": 114,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd118161",
@@ -11017,7 +11017,7 @@
     "duration": 9,
     "outcome": "Stood Down",
     "category": "Rescue/Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd119161",
@@ -11027,7 +11027,7 @@
     "duration": 241,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd120161",
@@ -11037,7 +11037,7 @@
     "duration": 23,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd121161",
@@ -11047,7 +11047,7 @@
     "duration": 86,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd122161",
@@ -11057,7 +11057,7 @@
     "duration": 19,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd123161",
@@ -11067,7 +11067,7 @@
     "duration": 121,
     "outcome": "Completed",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd124161",
@@ -11077,7 +11077,7 @@
     "duration": 6,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd125161",
@@ -11087,7 +11087,7 @@
     "duration": 172,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd126161",
@@ -11097,7 +11097,7 @@
     "duration": 250,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd127161",
@@ -11107,7 +11107,7 @@
     "duration": 92,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd128161",
@@ -11117,7 +11117,7 @@
     "duration": 18,
     "outcome": "Stood down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd129161",
@@ -11127,7 +11127,7 @@
     "duration": 13,
     "outcome": "Stood down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd130161",
@@ -11137,7 +11137,7 @@
     "duration": 97,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd131161",
@@ -11147,7 +11147,7 @@
     "duration": 252,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd132161",
@@ -11157,7 +11157,7 @@
     "duration": 12,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd133161",
@@ -11167,7 +11167,7 @@
     "duration": 34,
     "outcome": "Stood down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd134161",
@@ -11177,7 +11177,7 @@
     "duration": 8,
     "outcome": "Stood down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd135161",
@@ -11187,7 +11187,7 @@
     "duration": 170,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd136161",
@@ -11197,7 +11197,7 @@
     "duration": 80,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd137161",
@@ -11207,7 +11207,7 @@
     "duration": 107,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd138161",
@@ -11217,7 +11217,7 @@
     "duration": 55,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd139161",
@@ -11227,7 +11227,7 @@
     "duration": 86,
     "outcome": "Completed",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd140161",
@@ -11237,7 +11237,7 @@
     "duration": 41,
     "outcome": "Stood down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd141161",
@@ -11247,7 +11247,7 @@
     "duration": 80,
     "outcome": "Stood down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd142161",
@@ -11257,7 +11257,7 @@
     "duration": 7,
     "outcome": "Re-tasked",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd143161",
@@ -11267,7 +11267,7 @@
     "duration": 9,
     "outcome": "Re-tasked",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd144161",
@@ -11277,7 +11277,7 @@
     "duration": 22,
     "outcome": "Stood down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd145161",
@@ -11287,7 +11287,7 @@
     "duration": 34,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd146161",
@@ -11297,7 +11297,7 @@
     "duration": 79,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd147161",
@@ -11307,7 +11307,7 @@
     "duration": 49,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd148161",
@@ -11317,7 +11317,7 @@
     "duration": 146,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd149161",
@@ -11327,7 +11327,7 @@
     "duration": 139,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd150161",
@@ -11337,7 +11337,7 @@
     "duration": 99,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd151161",
@@ -11347,7 +11347,7 @@
     "duration": 59,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd152161",
@@ -11357,7 +11357,7 @@
     "duration": 140,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd153161",
@@ -11367,7 +11367,7 @@
     "duration": 7,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd154161",
@@ -11377,7 +11377,7 @@
     "duration": 122,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd155161",
@@ -11387,7 +11387,7 @@
     "duration": 412,
     "outcome": "Complete",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd156161",
@@ -11397,7 +11397,7 @@
     "duration": 41,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd157161",
@@ -11407,7 +11407,7 @@
     "duration": 78,
     "outcome": "Complete",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd158161",
@@ -11417,7 +11417,7 @@
     "duration": 36,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd159161",
@@ -11427,7 +11427,7 @@
     "duration": 108,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd160161",
@@ -11437,7 +11437,7 @@
     "duration": 7,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd161161",
@@ -11447,7 +11447,7 @@
     "duration": 31,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd162161",
@@ -11457,7 +11457,7 @@
     "duration": 43,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd163161",
@@ -11467,7 +11467,7 @@
     "duration": 42,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd164161",
@@ -11477,7 +11477,7 @@
     "duration": 34,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd165161",
@@ -11487,7 +11487,7 @@
     "duration": 244,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd166161",
@@ -11497,7 +11497,7 @@
     "duration": 57,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd167161",
@@ -11507,7 +11507,7 @@
     "duration": 78,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd168161",
@@ -11517,7 +11517,7 @@
     "duration": 380,
     "outcome": "Complete",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd169161",
@@ -11527,7 +11527,7 @@
     "duration": 123,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd170161",
@@ -11537,7 +11537,7 @@
     "duration": 47,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd171161",
@@ -11547,7 +11547,7 @@
     "duration": 152,
     "outcome": "Complete",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd172161",
@@ -11557,7 +11557,7 @@
     "duration": 5,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd173161",
@@ -11567,7 +11567,7 @@
     "duration": 15,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd174161",
@@ -11577,7 +11577,7 @@
     "duration": 14,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd175161",
@@ -11587,7 +11587,7 @@
     "duration": 67,
     "outcome": "Aborted-Weather",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd176161",
@@ -11597,7 +11597,7 @@
     "duration": 102,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd177161",
@@ -11607,7 +11607,7 @@
     "duration": 110,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd178161",
@@ -11617,7 +11617,7 @@
     "duration": 77,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd179161",
@@ -11627,7 +11627,7 @@
     "duration": 1,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Newq147161",
@@ -18097,7 +18097,7 @@
     "duration": 73,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd181161",
@@ -18107,7 +18107,7 @@
     "duration": 62,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd182161",
@@ -18117,7 +18117,7 @@
     "duration": 23,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd183161",
@@ -18127,7 +18127,7 @@
     "duration": 155,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd184161",
@@ -18137,7 +18137,7 @@
     "duration": 83,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd185161",
@@ -18147,7 +18147,7 @@
     "duration": 13,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd186161",
@@ -18157,7 +18157,7 @@
     "duration": 8,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd187161",
@@ -18167,7 +18167,7 @@
     "duration": 64,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd188161",
@@ -18177,7 +18177,7 @@
     "duration": 230,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd189161",
@@ -18187,7 +18187,7 @@
     "duration": 233,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd190161",
@@ -18197,7 +18197,7 @@
     "duration": 78,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd191161",
@@ -18207,7 +18207,7 @@
     "duration": 66,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd192161",
@@ -18217,7 +18217,7 @@
     "duration": 145,
     "outcome": "Complete",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd193161",
@@ -18227,7 +18227,7 @@
     "duration": 80,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd194161",
@@ -18237,7 +18237,7 @@
     "duration": 25,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd195161",
@@ -18247,7 +18247,7 @@
     "duration": 85,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd196161",
@@ -18257,7 +18257,7 @@
     "duration": 76,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd197161",
@@ -18267,7 +18267,7 @@
     "duration": 42,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd198161",
@@ -18277,7 +18277,7 @@
     "duration": 130,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd199161",
@@ -18287,7 +18287,7 @@
     "duration": 131,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd200161",
@@ -18297,7 +18297,7 @@
     "duration": 80,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd201161",
@@ -18307,7 +18307,7 @@
     "duration": 44,
     "outcome": "Complete",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd202161",
@@ -18317,7 +18317,7 @@
     "duration": 108,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd203161",
@@ -18327,7 +18327,7 @@
     "duration": 155,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd204161",
@@ -18337,7 +18337,7 @@
     "duration": 98,
     "outcome": "Complete",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd205161",
@@ -18347,7 +18347,7 @@
     "duration": 45,
     "outcome": "Complete",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd206161",
@@ -18357,7 +18357,7 @@
     "duration": 715,
     "outcome": "Complete",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd207161",
@@ -18367,7 +18367,7 @@
     "duration": 130,
     "outcome": "Complete",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd208161",
@@ -18377,7 +18377,7 @@
     "duration": 517,
     "outcome": "Stood Down",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd209161",
@@ -18387,7 +18387,7 @@
     "duration": 196,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd210161",
@@ -18397,7 +18397,7 @@
     "duration": 136,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd211161",
@@ -18407,7 +18407,7 @@
     "duration": 77,
     "outcome": "Complete",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd212161",
@@ -18417,7 +18417,7 @@
     "duration": 229,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd213161",
@@ -18427,7 +18427,7 @@
     "duration": 123,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd214161",
@@ -18437,7 +18437,7 @@
     "duration": 62,
     "outcome": "Re-tasked",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd215161",
@@ -18447,7 +18447,7 @@
     "duration": 227,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd216161",
@@ -18457,7 +18457,7 @@
     "duration": 145,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd217161",
@@ -18467,7 +18467,7 @@
     "duration": 75,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd218161",
@@ -18477,7 +18477,7 @@
     "duration": 46,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd219161",
@@ -18487,7 +18487,7 @@
     "duration": 252,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd220161",
@@ -18497,7 +18497,7 @@
     "duration": 112,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Newq246161",
@@ -23027,7 +23027,7 @@
     "duration": 149,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd002171",
@@ -23037,7 +23037,7 @@
     "duration": 45,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd003171",
@@ -23047,7 +23047,7 @@
     "duration": 86,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd004171",
@@ -23057,7 +23057,7 @@
     "duration": 121,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd005171",
@@ -23067,7 +23067,7 @@
     "duration": 140,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd006171",
@@ -23077,7 +23077,7 @@
     "duration": 195,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd007171",
@@ -23087,7 +23087,7 @@
     "duration": 53,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd008171",
@@ -23097,7 +23097,7 @@
     "duration": 229,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd009171",
@@ -23107,7 +23107,7 @@
     "duration": 7,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd010171",
@@ -23117,7 +23117,7 @@
     "duration": 116,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd011171",
@@ -23127,7 +23127,7 @@
     "duration": 40,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd012171",
@@ -23137,7 +23137,7 @@
     "duration": 28,
     "outcome": "Aborted-Weather",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd013171",
@@ -23147,7 +23147,7 @@
     "duration": 196,
     "outcome": "Complete (Nothing Found)",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd014171",
@@ -23157,7 +23157,7 @@
     "duration": 4,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd015171",
@@ -23167,7 +23167,7 @@
     "duration": 172,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd016171",
@@ -23177,7 +23177,7 @@
     "duration": 183,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd017171",
@@ -23187,7 +23187,7 @@
     "duration": 57,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd018171",
@@ -23197,7 +23197,7 @@
     "duration": 132,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd019171",
@@ -23207,7 +23207,7 @@
     "duration": 410,
     "outcome": "Complete",
     "category": "Pre-arranged Transfer",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd020171",
@@ -23217,7 +23217,7 @@
     "duration": 131,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd021171",
@@ -23227,7 +23227,7 @@
     "duration": 107,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd022171",
@@ -23237,7 +23237,7 @@
     "duration": 43,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd023171",
@@ -23247,7 +23247,7 @@
     "duration": 74,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd027171",
@@ -23257,7 +23257,7 @@
     "duration": 10,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd024171",
@@ -23267,7 +23267,7 @@
     "duration": 165,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd025171",
@@ -23277,7 +23277,7 @@
     "duration": 120,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd026171",
@@ -23287,7 +23287,7 @@
     "duration": 49,
     "outcome": "Stood Down",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd028171",
@@ -23297,7 +23297,7 @@
     "duration": 43,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd029171",
@@ -23307,7 +23307,7 @@
     "duration": 10,
     "outcome": "Stood Down",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd030171",
@@ -23317,7 +23317,7 @@
     "duration": 139,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd031171",
@@ -23327,7 +23327,7 @@
     "duration": 29,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd032171",
@@ -23337,7 +23337,7 @@
     "duration": 33,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd033171",
@@ -23347,7 +23347,7 @@
     "duration": 88,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd034171",
@@ -23357,7 +23357,7 @@
     "duration": 115,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd035171",
@@ -23367,7 +23367,7 @@
     "duration": 176,
     "outcome": "Stood Down",
     "category": "Search (Only)",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd036171",
@@ -23377,7 +23377,7 @@
     "duration": 213,
     "outcome": "Complete",
     "category": "Rescue/ Recovery",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Lydd037171",
@@ -23387,7 +23387,7 @@
     "duration": 83,
     "outcome": "Complete",
     "category": "Support",
-    "color": "rgb(,201,146,18)"
+    "color": "rgb(201,146,18)"
   },
   {
     "uid": "Newq001171",

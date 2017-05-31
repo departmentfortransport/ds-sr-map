@@ -30405,17 +30405,20 @@ var active = d3.select(null);
 
 // Tooltip variables
 
+
 var tooltip = tip()
 	.attr('class', 'd3-tooltip')
 	.offset([-10, 0])
 	.html(function(d) {
-		return "<strong>Base:</strong> <span style='color:red'>" + d.base + "</span><br/>" +
-			   "<strong>Latitude:</strong> <span style='color:red'>" + d.lat + "</span><br/>" +
-			   "<strong>Longitude:</strong> <span style='color:red'>" + d.long + "</span><br/>" +
-			   "<strong>Category:</strong> <span style='color:red'>" + d.category + "</span><br/>" +
-			   "<strong>Outcome:</strong> <span style='color:red'>" + d.outcome + "</span><br/>"
+		return "Base: <span style='color:#bbd1e3'>" + d.base + "</span><br/>" +
+			   "Latitude: <span style='color:#bbd1e3'>" + d.lat + "</span><br/>" +
+			   "Longitude: <span style='color:#bbd1e3'>" + d.long + "</span><br/>" +
+			   "Category: <span style='color:#bbd1e3'>" + d.category + "</span><br/>" +
+			   "Duration: <span style='color:#bbd1e3'>" + d.duration + " mins</span><br/>" +		   
+			   "Outcome: <span style='color:#bbd1e3'>" + d.outcome + "</span><br/>"
 		;
 	});
+
 
 // Functions
 
@@ -30489,7 +30492,7 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 	var center = d3.geoCentroid(json)
 	var offset = [width/2, height/2];
-	var scale  = 1000;
+	var scale  = 2000;
 
 	projection = d3.geoMercator()
 					.scale(scale)
@@ -30531,7 +30534,7 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 			.data(data)
 			.enter()
 			.append("circle", "dot")
-			.attr("r", 3)
+			.attr("r", 4)
 			.attr("fill", function (d) {
 				return d.color
 			})
@@ -30583,20 +30586,26 @@ var ordinal = d3.scaleOrdinal()
 
 map1.append("g")
 	.attr("class", "legendOrdinal")
-	.attr("transform", "translate(20,20)");
+	.attr("transform", "translate(20,28)");
+
+d3.select(".legendOrdinal")
+	.append("rect")
+	.attr("transform", "translate(-10,-18)")
+	.attr("fill","#fff")
+	.attr("fill-opacity","1")
+	.attr("stroke","#000")
+	.attr("width","110")
+	.attr("height","235");
 
 var legendOrdinal = d3legend.legendColor()
-						    .shape("path", d3.symbol().type(d3.symbolSquare).size(150)())
-						    .shapePadding(10)
+						    .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())
+						    .shapePadding(5)
 						    .cellFilter(function(d){ return d.label !== "e" })
+							.title("Legend")
   							.scale(ordinal);
 
 map1.select(".legendOrdinal")
    .call(legendOrdinal);
-
-
-
-
 
 
 
