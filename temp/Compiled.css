@@ -8332,4 +8332,22 @@ img {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
+} 
+
+.background {
+	fill: none;
+	pointer-events: all;
+} 
+
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+} 
+
+.feature.active {
+  fill: orange;
+} 
+
+.legendOrdinal {
+
 }
