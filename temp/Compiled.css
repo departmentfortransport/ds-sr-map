@@ -8334,7 +8334,7 @@ img {
 } 
 
 .background {
-	fill: none;
+	fill: #ebf5f8;
 	pointer-events: all;
 	stroke: #888;
 	stroke-width: 4;

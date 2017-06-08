@@ -8,16 +8,19 @@ var d3legend = require('d3-svg-legend');
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
 var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMA29E7BfaYGVcXdo3Me9_EQDQouQks5ZQjf5wA%3D%3D';
 var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMM7C9-z8vSuU0bC1GngcnM_2PfU1ks5ZQldNwA%3D%3D';
+
 // Dimensions variables
 
 var width = $('#map1-container').width();
 var height = 800;
 var active = d3.select(null);
+var rSize = 4;
+var sqSize = 10;
 
 // Tooltip variables
 
 
-var tooltip = tip()
+var locsTooltip = tip()
 	.attr('class', 'd3-tooltip')
 	.offset([-10, 0])
 	.html(function(d) {
@@ -38,7 +41,7 @@ var basesTooltip = tip()
 			   "Total Taskings: <span style='color:#bbd1e3'>" + d.taskings + "</span><br/>" +
 			   "Land Taskings: <span style='color:#bbd1e3'>" + d.landTaskings + "</span><br/>" +
 			   "Coast Taskings: <span style='color:#bbd1e3'>" + d.coastTaskings + "</span><br/>" +
-			   "Maritime Taskings: <span style='color:#bbd1e3'>" + d.maritimeTaskings + "w</span><br/>"
+			   "Maritime Taskings: <span style='color:#bbd1e3'>" + d.maritimeTaskings + "</span><br/>"
 		;
 	});
 
@@ -65,14 +68,52 @@ function clicked (d) {
 }
 
 function zoomed () {
-	g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
-	g.attr("transform", d3.event.transform)
-	g.attr("r", 1.5 / d3.event.transform.k);
 
-	g2.style("stroke-width", 1.5 / d3.event.transform.k + "px");
+	zoomVar = d3.event.transform.k;
+
+	g.style("stroke-width", 1.5 / zoomVar + "px");
+	g.attr("transform", d3.event.transform)
+
+	g2.style("stroke-width", 1.5 / zoomVar + "px");
 	g2.attr("transform", d3.event.transform);
 
+	// Re-rendering the chart line
 
+	g.select("path")
+		.attr("stroke-width", 0.3 / zoomVar)
+
+	// Re-rendering the Chart Objects
+
+	g.selectAll("circle")
+		.attr("r", rSize / zoomVar)
+		.attr("stroke-width", 0.3 / zoomVar)
+
+		.on("mouseover", function(d) {
+
+			locsTooltip.show(d);
+
+    		d3.select(this)
+	        	.transition()
+			    .duration(100)
+			    .attr("r", rSize / zoomVar * 2)
+    		})
+
+
+			// Mouseout Interactivity
+
+			.on("mouseout", function(d) {
+
+				locsTooltip.hide(); 
+
+				d3.select(this)
+					.transition()
+				    .duration(100)
+				    .attr("r", rSize / zoomVar)
+			})
+
+	g2.selectAll("rect")
+		.attr("height", sqSize / zoomVar)
+		.attr("width", sqSize / zoomVar)
 
 }
 
@@ -92,7 +133,8 @@ function stopped() {
 
 // Defining & Rendering the map
 
-var map1 = d3.select("#map1-container").append("svg")
+var map1 = d3.select("#map1-container")
+	.append("svg")
     .attr("width", width)
     .attr("height", height)
     .on("click", stopped, true);
@@ -111,7 +153,7 @@ var zoom = d3.zoom()
     .on("zoom", zoomed);
 
 map1.call(zoom); 							// Initialise the zoom
-map1.call(tooltip);							// Initialise the tooltip
+map1.call(locsTooltip);						// Initialise the tooltip
 map1.call(basesTooltip);					// Initialise the tooltip
 
 d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
@@ -149,6 +191,8 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 	// Rendering the map
 
+	g.attr("fill","#ff0000")
+
 	g.append("path")
 		.attr("class","map1")
 		.attr("d", path(json))
@@ -168,7 +212,7 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 			.data(data)
 			.enter()
 			.append("circle", "dot")
-			.attr("r", 4)
+			.attr("r", rSize)
 			.attr("fill", function (d) {
 				return d.color
 			})
@@ -186,12 +230,12 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
     	
     		.on("mouseover", function(d) {
 
-				tooltip.show(d);
+				locsTooltip.show(d);
 
         		d3.select(this)
 		        	.transition()
 				    .duration(100)
-				    .attr("r", 10)
+				    .attr("r", rSize * 2)
 				    //.attr('fill-opacity', 1)
     		})
 
@@ -203,10 +247,9 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 				d3.select(this)
 					.transition()
 				    .duration(100)
-				    .attr("r", 4)
-				    //.attr('fill-opacity', 0.5)
+				    .attr("r", rSize)
 
- 	       		tooltip.hide(); 
+ 	       		locsTooltip.hide(); 
 			})
 	});
 
@@ -221,8 +264,8 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 				.data(data)
 				.enter()
 				.append("rect", "square")
-				.attr("width","10")
-				.attr("height","10")
+				.attr("width",sqSize)
+				.attr("height",sqSize)
 				.attr("fill", "#000")
 				//.attr('fill-opacity', 0.5)
 				.attr("stroke", "#41423b")
@@ -243,8 +286,8 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 	        		d3.select(this)
 			        	.transition()
 					    .duration(100)
-					    .attr("r", 10)
-					    //.attr('fill-opacity', 1)
+					    .attr("fill", "#ff0000")
+
 	    		})
 
 			// Mouseout Interactivity
@@ -254,8 +297,7 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 				d3.select(this)
 					.transition()
 				    .duration(100)
-				    .attr("r", 4)
-				    //.attr('fill-opacity', 0.5)
+					.attr("fill", "#000")
 
         			basesTooltip.hide(); 
 			})
@@ -283,34 +325,56 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 //     zoom.scaleBy(map1, 0.5);
 //   })
 
-// Legend
-
-var ordinal = d3.scaleOrdinal()
-  .domain(['Caernarfon', 'Humberside', 'Sumburgh', 'Inverness', 'Lee On Solent', 'Lydd', 'Newquay', 'Portland', 'Prestwick', 'St Athan', 'Stornoway'])
-  .range(['rgb(0,153,169)', 'rgb(98,167,15)', 'rgb(0,130,202)', 'rgb(210,95,21)', 'rgb(0,149,59)', 'rgb(201,146,18)', 'rgb(102,194,203)', 'rgb(84,86,91)',
-			 'rgb(130,130,130)', 'rgb(228,159,115)', 'rgb(233,190,113)']);
+// Append an opaque SVG on which to place the legend
 
 map1.append("g")
-	.attr("class", "legendOrdinal")
-	.attr("transform", "translate(20,28)");
+	.attr("class", "legendLocs")
+	.attr("transform", "translate(20,28)")
+	.attr("fill", "#000");
 
-d3.select(".legendOrdinal")
+// // Placing the legend
+
+d3.select(".legendLocs")
 	.append("rect")
 	.attr("transform", "translate(-10,-18)")
 	.attr("fill","#fff")
 	.attr("fill-opacity","1")
 	.attr("stroke","#000")
 	.attr("width","110")
-	.attr("height","235");
+	.attr("height","255");
 
-var legendOrdinal = d3legend.legendColor()
+map1.append("g")
+	.attr("class", "legendBases")
+	.attr("transform", "translate(27,251)")
+
+
+// Legend
+
+var ordinalLocs = d3.scaleOrdinal()
+  .domain(['Caernarfon', 'Humberside', 'Sumburgh', 'Inverness', 'Lee On Solent', 'Lydd', 'Newquay', 'Portland', 'Prestwick', 'St Athan', 'Stornoway'])
+  .range(['rgb(0,153,169)', 'rgb(98,167,15)', 'rgb(0,130,202)', 'rgb(210,95,21)', 'rgb(0,149,59)', 'rgb(201,146,18)', 'rgb(102,194,203)', 'rgb(84,86,91)',
+			 'rgb(130,130,130)', 'rgb(228,159,115)', 'rgb(233,190,113)']);
+
+
+var legendLocs = d3legend.legendColor()
 						    .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())
 						    .shapePadding(5)
 						    .cellFilter(function(d){ return d.label !== "e" })
 							.title("Legend")
-  							.scale(ordinal);
+  							.scale(ordinalLocs);
 
-map1.select(".legendOrdinal")
-   .call(legendOrdinal);
+map1.select(".legendLocs")
+   .call(legendLocs);
 
+var ordinalBases = d3.scaleOrdinal()
+   .domain (['Base'])
+   .range(['rgb(0,0,0)']);
 
+var legendBases = d3legend.legendColor()
+						    .shape("path", d3.symbol().type(d3.symbolSquare).size(125)())
+						    .shapePadding(30)
+						    .cellFilter(function(d){ return d.label !== "e" })
+  							.scale(ordinalBases);
+
+map1.select(".legendBases")
+   .call(legendBases);
