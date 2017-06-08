@@ -30396,7 +30396,7 @@ var d3legend = __webpack_require__(102);
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
 var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMA29E7BfaYGVcXdo3Me9_EQDQouQks5ZQjf5wA%3D%3D';
-var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMCVNIDQPXyBOfJwf4sHSQrMu_ds8ks5ZQk7HwA%3D%3D';
+var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMINkFLL8cnAPlO_Gol7gk_SFoTmtks5ZQlIrwA%3D%3D';
 // Dimensions variables
 
 var width = $('#map1-container').width();
@@ -30416,6 +30416,15 @@ var tooltip = tip()
 			   "Category: <span style='color:#bbd1e3'>" + d.category + "</span><br/>" +
 			   "Duration: <span style='color:#bbd1e3'>" + d.duration + " mins</span><br/>" +		   
 			   "Outcome: <span style='color:#bbd1e3'>" + d.outcome + "</span><br/>"
+		;
+	});
+
+var basesTooltip = tip()
+	.attr('class', 'd3-tooltip')
+	.offset([-10, 0])
+	.html(function(d) {
+		return "Base: <span style='color:#bbd1e3'>" + d.base + "</span><br/>"
+		//return 'Test!'
 		;
 	});
 
@@ -30444,6 +30453,12 @@ function clicked (d) {
 function zoomed () {
 	g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
 	g.attr("transform", d3.event.transform);
+
+	g2.style("stroke-width", 1.5 / d3.event.transform.k + "px");
+	g2.attr("transform", d3.event.transform);
+
+
+
 }
 
 function reset() {
@@ -30474,14 +30489,15 @@ map1.append("rect")
     .on("click", reset);
 
 var g = map1.append("g");
+var g2 = map1.append("g");
 
 var zoom = d3.zoom()
     .scaleExtent([1, 8])
     .on("zoom", zoomed);
 
 map1.call(zoom); 							// Initialise the zoom
-
 map1.call(tooltip);							// Initialise the tooltip
+map1.call(basesTooltip);							// Initialise the tooltip
 
 d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
@@ -30527,64 +30543,66 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
  	// Rendering the location data
 
-	// d3.json(dataUrl, function(error, data) {
+	d3.json(dataUrl, function(error, data) {
 
-	// 	// Bases
+		// Bases
 
-	// 	// Search & rescue locations
+		// Search & rescue locations
 
-	// 	g.selectAll("dot")
-	// 		.data(data)
-	// 		.enter()
-	// 		.append("circle", "dot")
-	// 		.attr("r", 4)
-	// 		.attr("fill", function (d) {
-	// 			return d.color
-	// 		})
-	// 		//.attr('fill-opacity', 0.5)
-	// 		.attr("stroke", "#41423b")
-	// 		.attr("stroke-width","0.3")
-	// 		.attr("transform", function(d) {
-	// 			return "translate(" + projection([
-	// 				d.long,
-	// 				d.lat
-	// 			]) + ")"
-	// 		})
+		g.selectAll("dot")
+			.data(data)
+			.enter()
+			.append("circle", "dot")
+			.attr("r", 4)
+			.attr("fill", function (d) {
+				return d.color
+			})
+			//.attr('fill-opacity', 0.5)
+			.attr("stroke", "#41423b")
+			.attr("stroke-width","0.3")
+			.attr("transform", function(d) {
+				return "translate(" + projection([
+					d.long,
+					d.lat
+				]) + ")"
+			})
 
-	// 		// Tooltip Interactivity
+			// Tooltip Interactivity
     	
- //    		.on("mouseover", function(d) {
+    		.on("mouseover", function(d) {
 
-	// 			tooltip.show(d);
+				tooltip.show(d);
 
- //        		d3.select(this)
-	// 	        	.transition()
-	// 			    .duration(100)
-	// 			    .attr("r", 10)
-	// 			    //.attr('fill-opacity', 1)
- //    		})
+        		d3.select(this)
+		        	.transition()
+				    .duration(100)
+				    .attr("r", 10)
+				    //.attr('fill-opacity', 1)
+    		})
 
 
-	// 		// Mouseout Interactivity
+			// Mouseout Interactivity
 
-	// 		.on("mouseout", function(d) {
+			.on("mouseout", function(d) {
 
-	// 			d3.select(this)
-	// 				.transition()
-	// 			    .duration(100)
-	// 			    .attr("r", 4)
-	// 			    //.attr('fill-opacity', 0.5)
+				d3.select(this)
+					.transition()
+				    .duration(100)
+				    .attr("r", 4)
+				    //.attr('fill-opacity', 0.5)
 
- //        			tooltip.hide(); 
-	// 		})
-	// });
+ 	       		tooltip.hide(); 
+			})
+	});
 
+
+	// Rendering the bases data
 
 	d3.json(baseUrl, function(error, data) {		// Calulating & rendering the json
 
 		if (error) return console.warn(error);
 
-			g.selectAll("dot")
+			g2.selectAll("dot")
 				.data(data)
 				.enter()
 				.append("rect", "dot")
@@ -30600,6 +30618,32 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 						d.lat
 					]) + ")"
 				})
+
+				// Tooltip Interactivity
+    	
+    			.on("mouseover", function(d) {
+
+					basesTooltip.show(d);
+
+	        		d3.select(this)
+			        	.transition()
+					    .duration(100)
+					    .attr("r", 10)
+					    //.attr('fill-opacity', 1)
+	    		})
+
+			// Mouseout Interactivity
+
+			.on("mouseout", function(d) {
+
+				d3.select(this)
+					.transition()
+				    .duration(100)
+				    .attr("r", 4)
+				    //.attr('fill-opacity', 0.5)
+
+        			basesTooltip.hide(); 
+			})
 	});
 
 });
@@ -30628,7 +30672,7 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 var ordinal = d3.scaleOrdinal()
   .domain(['Caernarfon', 'Humberside', 'Sumburgh', 'Inverness', 'Lee On Solent', 'Lydd', 'Newquay', 'Portland', 'Prestwick', 'St Athan', 'Stornoway'])
-  .range(['rgb(0,153,169)', 'rgb(98,167,15)', 'rgb(0,130,202)', 'rgb(210,95,21)', 'rgb(0,149,59)', 'rgb(,201,146,18)', 'rgb(102,194,203)', 'rgb(84,86,91)',
+  .range(['rgb(0,153,169)', 'rgb(98,167,15)', 'rgb(0,130,202)', 'rgb(210,95,21)', 'rgb(0,149,59)', 'rgb(201,146,18)', 'rgb(102,194,203)', 'rgb(84,86,91)',
 			 'rgb(130,130,130)', 'rgb(228,159,115)', 'rgb(233,190,113)']);
 
 map1.append("g")
