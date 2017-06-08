@@ -30396,7 +30396,7 @@ var d3legend = __webpack_require__(102);
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
 var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMA29E7BfaYGVcXdo3Me9_EQDQouQks5ZQjf5wA%3D%3D';
-var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMINkFLL8cnAPlO_Gol7gk_SFoTmtks5ZQlIrwA%3D%3D';
+var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMM7C9-z8vSuU0bC1GngcnM_2PfU1ks5ZQldNwA%3D%3D';
 // Dimensions variables
 
 var width = $('#map1-container').width();
@@ -30423,8 +30423,11 @@ var basesTooltip = tip()
 	.attr('class', 'd3-tooltip')
 	.offset([-10, 0])
 	.html(function(d) {
-		return "Base: <span style='color:#bbd1e3'>" + d.base + "</span><br/>"
-		//return 'Test!'
+		return "Base: <span style='color:#bbd1e3'>" + d.base + "</span><br/>" +
+			   "Total Taskings: <span style='color:#bbd1e3'>" + d.taskings + "</span><br/>" +
+			   "Land Taskings: <span style='color:#bbd1e3'>" + d.landTaskings + "</span><br/>" +
+			   "Coast Taskings: <span style='color:#bbd1e3'>" + d.coastTaskings + "</span><br/>" +
+			   "Maritime Taskings: <span style='color:#bbd1e3'>" + d.maritimeTaskings + "</span><br/>"
 		;
 	});
 
