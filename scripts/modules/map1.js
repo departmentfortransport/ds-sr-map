@@ -38,7 +38,7 @@ var basesTooltip = tip()
 			   "Total Taskings: <span style='color:#bbd1e3'>" + d.taskings + "</span><br/>" +
 			   "Land Taskings: <span style='color:#bbd1e3'>" + d.landTaskings + "</span><br/>" +
 			   "Coast Taskings: <span style='color:#bbd1e3'>" + d.coastTaskings + "</span><br/>" +
-			   "Maritime Taskings: <span style='color:#bbd1e3'>" + d.maritimeTaskings + "</span><br/>"
+			   "Maritime Taskings: <span style='color:#bbd1e3'>" + d.maritimeTaskings + "w</span><br/>"
 		;
 	});
 
@@ -66,7 +66,8 @@ function clicked (d) {
 
 function zoomed () {
 	g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
-	g.attr("transform", d3.event.transform);
+	g.attr("transform", d3.event.transform)
+	g.attr("r", 1.5 / d3.event.transform.k);
 
 	g2.style("stroke-width", 1.5 / d3.event.transform.k + "px");
 	g2.attr("transform", d3.event.transform);
@@ -111,7 +112,7 @@ var zoom = d3.zoom()
 
 map1.call(zoom); 							// Initialise the zoom
 map1.call(tooltip);							// Initialise the tooltip
-map1.call(basesTooltip);							// Initialise the tooltip
+map1.call(basesTooltip);					// Initialise the tooltip
 
 d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
@@ -216,10 +217,10 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 		if (error) return console.warn(error);
 
-			g2.selectAll("dot")
+			g2.selectAll("square")
 				.data(data)
 				.enter()
-				.append("rect", "dot")
+				.append("rect", "square")
 				.attr("width","10")
 				.attr("height","10")
 				.attr("fill", "#000")
