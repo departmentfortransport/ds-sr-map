@@ -1,4 +1,10 @@
-[{
+[
+{
+"base": "Caernarfon",
+"lat": 	53.10,	
+"long":	-4.34
+},
+{
 "base": "St Athan",
 "lat": 	51.41,	
 "long":	-3.42

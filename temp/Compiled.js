@@ -30396,7 +30396,7 @@ var d3legend = __webpack_require__(102);
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
 var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMA29E7BfaYGVcXdo3Me9_EQDQouQks5ZQjf5wA%3D%3D';
-
+var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMCVNIDQPXyBOfJwf4sHSQrMu_ds8ks5ZQk7HwA%3D%3D';
 // Dimensions variables
 
 var width = $('#map1-container').width();
@@ -30442,7 +30442,6 @@ function clicked (d) {
 }
 
 function zoomed () {
-
 	g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
 	g.attr("transform", d3.event.transform);
 }
@@ -30460,41 +30459,6 @@ function reset() {
 function stopped() {
 	if (d3.event.defaultPrevented) d3.event.stopPropagation();
 }
-
-function zoomClick() {
-
-var clicked = d3.event.target,
-        direction = 1,
-        factor = 0.2,
-        target_zoom = 1,
-        center = [width / 2, height / 2],
-        extent = zoom.scaleExtent(),
-        translate = d3.zoomIdentity.translate(offset[0],offset[1]),
-        translate0 = [],
-        l = [],
-        view = {x: translate[0], y: translate[1], k: zoom.scale()};
-
-    d3.event.preventDefault();
-    direction = (this.id === 'zoom_in') ? 1 : -1;
-    target_zoom = zoom.scale() * (1 + factor * direction);
-
-    if (target_zoom < extent[0] || target_zoom > extent[1]) { return false; }
-
-    translate0 = [(center[0] - view.x) / view.k, (center[1] - view.y) / view.k];
-    view.k = target_zoom;
-    l = [translate0[0] * view.k + view.x, translate0[1] * view.k + view.y];
-
-    view.x += center[0] - l[0];
-    view.y += center[1] - l[1];
-
-    interpolateZoom([view.x, view.y], view.k);
-}
-
-
-
-
-
-
 
 // Defining & Rendering the map
 
@@ -30563,58 +30527,86 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
  	// Rendering the location data
 
-	d3.json(dataUrl, function(error, data) {
+	// d3.json(dataUrl, function(error, data) {
 
-		// Bases
+	// 	// Bases
 
-		// Search & rescue locations
+	// 	// Search & rescue locations
 
-		g.selectAll("dot")
-			.data(data)
-			.enter()
-			.append("circle", "dot")
-			.attr("r", 4)
-			.attr("fill", function (d) {
-				return d.color
-			})
-			//.attr('fill-opacity', 0.5)
-			.attr("stroke", "#41423b")
-			.attr("stroke-width","0.3")
-			.attr("transform", function(d) {
-				return "translate(" + projection([
-					d.long,
-					d.lat
-				]) + ")"
-			})
+	// 	g.selectAll("dot")
+	// 		.data(data)
+	// 		.enter()
+	// 		.append("circle", "dot")
+	// 		.attr("r", 4)
+	// 		.attr("fill", function (d) {
+	// 			return d.color
+	// 		})
+	// 		//.attr('fill-opacity', 0.5)
+	// 		.attr("stroke", "#41423b")
+	// 		.attr("stroke-width","0.3")
+	// 		.attr("transform", function(d) {
+	// 			return "translate(" + projection([
+	// 				d.long,
+	// 				d.lat
+	// 			]) + ")"
+	// 		})
 
-			// Tooltip Interactivity
+	// 		// Tooltip Interactivity
     	
-    		.on("mouseover", function(d) {
+ //    		.on("mouseover", function(d) {
 
-				tooltip.show(d);
+	// 			tooltip.show(d);
 
-        		d3.select(this)
-		        	.transition()
-				    .duration(100)
-				    .attr("r", 10)
-				    //.attr('fill-opacity', 1)
-    		})
+ //        		d3.select(this)
+	// 	        	.transition()
+	// 			    .duration(100)
+	// 			    .attr("r", 10)
+	// 			    //.attr('fill-opacity', 1)
+ //    		})
 
 
-			// Mouseout Interactivity
+	// 		// Mouseout Interactivity
 
-			.on("mouseout", function(d) {
+	// 		.on("mouseout", function(d) {
 
-				d3.select(this)
-					.transition()
-				    .duration(100)
-				    .attr("r", 4)
-				    //.attr('fill-opacity', 0.5)
+	// 			d3.select(this)
+	// 				.transition()
+	// 			    .duration(100)
+	// 			    .attr("r", 4)
+	// 			    //.attr('fill-opacity', 0.5)
 
-        			tooltip.hide(); 
-			})
+ //        			tooltip.hide(); 
+	// 		})
+	// });
+
+
+	d3.json(baseUrl, function(error, data) {		// Calulating & rendering the json
+
+		if (error) return console.warn(error);
+
+			g.selectAll("dot")
+				.data(data)
+				.enter()
+				.append("rect", "dot")
+				.attr("width","10")
+				.attr("height","10")
+				.attr("fill", "#000")
+				//.attr('fill-opacity', 0.5)
+				.attr("stroke", "#41423b")
+				.attr("stroke-width","0.3")
+				.attr("transform", function(d) {
+					return "translate(" + projection([
+						d.long,
+						d.lat
+					]) + ")"
+				})
 	});
+
 });
+
+// Rendering the bases data
+
+
 
 // Simple Zoom
 
@@ -30631,11 +30623,6 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 //   .on("click", function() {
 //     zoom.scaleBy(map1, 0.5);
 //   })
-
-
-
-
-d3.selectAll('button').on('click', zoomClick);
 
 // Legend
 
