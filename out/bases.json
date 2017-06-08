@@ -1,0 +1,42 @@
+[{
+"base": "St Athan",
+"lat": 	51.41,	
+"long":	-3.42
+},
+{
+"base": "Humberside",
+"lat": 	53.57,	
+"long":	-0.35
+},{
+"base": "Inverness",
+"lat": 	57.54,	
+"long":	-4.06
+},{
+"base":	 "Lydd",
+"lat": 	50.95,
+"long":	0.93
+},{
+"base": "Sumburgh",
+"lat": 	59.88,	
+"long":	-1.30
+},{
+"base": "Stornoway",
+"lat": 	58.21,	
+"long":	-6.32
+},{
+"base": "Portland",
+"lat": 	50.57,	
+"long":	-2.45
+},{
+"base": "Lee-on-Solent",
+"lat": 	50.81,	
+"long":	-1.21
+},{
+"base": "Prestwick",
+"lat": 	55.51,	
+"long":	-4.61
+},{
+"base": "Newquay",
+"lat": 	50.45,	
+"long":	-5.00
+}]

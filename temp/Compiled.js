@@ -30395,7 +30395,7 @@ var d3legend = __webpack_require__(102);
 // Data Variables
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
-var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMF27HsOZ7__68Hs77uoIu3gXsDzDks5ZN7v2wA%3D%3D';
+var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMA29E7BfaYGVcXdo3Me9_EQDQouQks5ZQjf5wA%3D%3D';
 
 // Dimensions variables
 
@@ -30436,7 +30436,7 @@ function clicked (d) {
       scale = Math.max(10, Math.min(8, 0.9 / Math.max(dx / width, dy / height))),
       offset = [width / 2 - scale * x, height / 2 - scale * y];
 
-  svg.transition()
+  map1.transition()
       .duration(750)
       .call( zoom.transform, d3.zoomIdentity.translate(offset[0],offset[1]).scale(scale) ); // updated for d3 v4
 }
@@ -30460,6 +30460,41 @@ function reset() {
 function stopped() {
 	if (d3.event.defaultPrevented) d3.event.stopPropagation();
 }
+
+function zoomClick() {
+
+var clicked = d3.event.target,
+        direction = 1,
+        factor = 0.2,
+        target_zoom = 1,
+        center = [width / 2, height / 2],
+        extent = zoom.scaleExtent(),
+        translate = d3.zoomIdentity.translate(offset[0],offset[1]),
+        translate0 = [],
+        l = [],
+        view = {x: translate[0], y: translate[1], k: zoom.scale()};
+
+    d3.event.preventDefault();
+    direction = (this.id === 'zoom_in') ? 1 : -1;
+    target_zoom = zoom.scale() * (1 + factor * direction);
+
+    if (target_zoom < extent[0] || target_zoom > extent[1]) { return false; }
+
+    translate0 = [(center[0] - view.x) / view.k, (center[1] - view.y) / view.k];
+    view.k = target_zoom;
+    l = [translate0[0] * view.k + view.x, translate0[1] * view.k + view.y];
+
+    view.x += center[0] - l[0];
+    view.y += center[1] - l[1];
+
+    interpolateZoom([view.x, view.y], view.k);
+}
+
+
+
+
+
+
 
 // Defining & Rendering the map
 
@@ -30532,8 +30567,6 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 		// Bases
 
-		
-
 		// Search & rescue locations
 
 		g.selectAll("dot")
@@ -30575,13 +30608,34 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 				d3.select(this)
 					.transition()
 				    .duration(100)
-				    .attr("r", 3)
+				    .attr("r", 4)
 				    //.attr('fill-opacity', 0.5)
 
         			tooltip.hide(); 
 			})
 	});
 });
+
+// Simple Zoom
+
+// var gui = d3.select("#gui");
+// gui.append("span")
+//   .classed("zoom in", true)
+//   .text("+")
+//   .on("click", function() {
+//     zoom.scaleBy(map1, 1.2);
+//   });
+// gui.append("span")
+//   .classed("zoom out", true)
+//   .text("-")
+//   .on("click", function() {
+//     zoom.scaleBy(map1, 0.5);
+//   })
+
+
+
+
+d3.selectAll('button').on('click', zoomClick);
 
 // Legend
 
