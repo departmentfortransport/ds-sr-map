@@ -6,8 +6,8 @@ var d3legend = require('d3-svg-legend');
 // Data Variables
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
-var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json';
-var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json';
+var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-data/master/out/locs_out.json';
+var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-data/master/out/bases.json';
 
 // Dimensions variables
 
@@ -319,7 +319,7 @@ d3.select(".legendLocs")
 	.attr("fill-opacity","1")
 	.attr("stroke","#000")
 	.attr("width","120")
-	.attr("height","235");
+	.attr("height","237");
 
 map1.append("g")
 	.attr("class", "legendBases")
