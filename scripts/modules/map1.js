@@ -318,7 +318,7 @@ d3.select(".legendLocs")
 	.attr("fill","#fff")
 	.attr("fill-opacity","1")
 	.attr("stroke","#000")
-	.attr("width","110")
+	.attr("width","120")
 	.attr("height","235");
 
 map1.append("g")
