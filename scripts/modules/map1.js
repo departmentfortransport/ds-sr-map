@@ -6,8 +6,8 @@ var d3legend = require('d3-svg-legend');
 // Data Variables
 
 var mapUrl = 'https://raw.githubusercontent.com/departmentfortransport/geojson/master/british-isles.geojson';
-var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json?token=AQcJMA29E7BfaYGVcXdo3Me9_EQDQouQks5ZQjf5wA%3D%3D';
-var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json?token=AQcJMM7C9-z8vSuU0bC1GngcnM_2PfU1ks5ZQldNwA%3D%3D';
+var dataUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/locs_out.json';
+var baseUrl = 'https://raw.githubusercontent.com/departmentfortransport/ds-sr-map/master/out/bases.json';
 
 // Dimensions variables
 
@@ -98,7 +98,6 @@ function zoomed () {
 			    .attr("r", rSize / zoomVar * 2)
     		})
 
-
 			// Mouseout Interactivity
 
 			.on("mouseout", function(d) {
@@ -111,9 +110,8 @@ function zoomed () {
 				    .attr("r", rSize / zoomVar)
 			})
 
-	g2.selectAll("rect")
-		.attr("height", sqSize / zoomVar)
-		.attr("width", sqSize / zoomVar)
+		g2.selectAll("circle")
+			.attr("r", rSize / zoomVar * 1.5)
 
 }
 
@@ -204,8 +202,6 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 	d3.json(dataUrl, function(error, data) {
 
-		// Bases
-
 		// Search & rescue locations
 
 		g.selectAll("dot")
@@ -256,74 +252,56 @@ d3.json(mapUrl, function(error, json) {		// Calulating & rendering the json
 
 	// Rendering the bases data
 
-	d3.json(baseUrl, function(error, data) {		// Calulating & rendering the json
+	// d3.json(baseUrl, function(error, data) {		// Calulating & rendering the json
 
-		if (error) return console.warn(error);
+	// 	if (error) return console.warn(error);
 
-			g2.selectAll("square")
-				.data(data)
-				.enter()
-				.append("rect", "square")
-				.attr("width",sqSize)
-				.attr("height",sqSize)
-				.attr("fill", "#000")
-				//.attr('fill-opacity', 0.5)
-				.attr("stroke", "#41423b")
-				.attr("stroke-width","0.3")
-				.attr("transform", function(d) {
-					return "translate(" + projection([
-						d.long,
-						d.lat
-					]) + ")"
-				})
+	// 		g2.selectAll("square")
+	// 			.data(data)
+	// 			.enter()
+	// 			.append("circle", "square")
+	// 			.attr("r", function () {
+	// 				return rSize * 1.5
+	// 			})
+	// 			.attr("height",sqSize)
+	// 			.attr("fill", "#000")
+	// 			//.attr('fill-opacity', 0.5)
+	// 			.attr("stroke", "#41423b")
+	// 			.attr("stroke-width","0.3")
+	// 			.attr("transform", function(d) {
+	// 				return "translate(" + projection([
+	// 					d.long,
+	// 					d.lat
+	// 				]) + ")"
+	// 			})
 
-				// Tooltip Interactivity
+	// 			// Tooltip Interactivity
     	
-    			.on("mouseover", function(d) {
+ //    			.on("mouseover", function(d) {
 
-					basesTooltip.show(d);
+	// 				basesTooltip.show(d);
 
-	        		d3.select(this)
-			        	.transition()
-					    .duration(100)
-					    .attr("fill", "#ff0000")
+	//         		d3.select(this)
+	// 		        	.transition()
+	// 				    .duration(100)
+	// 				    .attr("fill", "#ff0000")
 
-	    		})
+	//     		})
 
-			// Mouseout Interactivity
+	// 		// Mouseout Interactivity
 
-			.on("mouseout", function(d) {
+	// 		.on("mouseout", function(d) {
 
-				d3.select(this)
-					.transition()
-				    .duration(100)
-					.attr("fill", "#000")
+	// 			d3.select(this)
+	// 				.transition()
+	// 			    .duration(100)
+	// 				.attr("fill", "#000")
 
-        			basesTooltip.hide(); 
-			})
-	});
+ //        			basesTooltip.hide(); 
+	// 		})
+	// });
 
 });
-
-// Rendering the bases data
-
-
-
-// Simple Zoom
-
-// var gui = d3.select("#gui");
-// gui.append("span")
-//   .classed("zoom in", true)
-//   .text("+")
-//   .on("click", function() {
-//     zoom.scaleBy(map1, 1.2);
-//   });
-// gui.append("span")
-//   .classed("zoom out", true)
-//   .text("-")
-//   .on("click", function() {
-//     zoom.scaleBy(map1, 0.5);
-//   })
 
 // Append an opaque SVG on which to place the legend
 
@@ -341,7 +319,7 @@ d3.select(".legendLocs")
 	.attr("fill-opacity","1")
 	.attr("stroke","#000")
 	.attr("width","110")
-	.attr("height","255");
+	.attr("height","235");
 
 map1.append("g")
 	.attr("class", "legendBases")
@@ -351,30 +329,33 @@ map1.append("g")
 // Legend
 
 var ordinalLocs = d3.scaleOrdinal()
-  .domain(['Caernarfon', 'Humberside', 'Sumburgh', 'Inverness', 'Lee On Solent', 'Lydd', 'Newquay', 'Portland', 'Prestwick', 'St Athan', 'Stornoway'])
+  .domain(['Caernarfon', 'Humberside', 'Sumburgh', 'Inverness', 'Lee On Solent', 'Lydd', 'Newquay', 'Portland', 'Prestwick', 
+  	'St Athan', 'Stornoway'])
   .range(['rgb(0,153,169)', 'rgb(98,167,15)', 'rgb(0,130,202)', 'rgb(210,95,21)', 'rgb(0,149,59)', 'rgb(201,146,18)', 'rgb(102,194,203)', 'rgb(84,86,91)',
 			 'rgb(130,130,130)', 'rgb(228,159,115)', 'rgb(233,190,113)']);
 
 
 var legendLocs = d3legend.legendColor()
-						    .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())
+						    .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())	
 						    .shapePadding(5)
-						    .cellFilter(function(d){ return d.label !== "e" })
 							.title("Legend")
   							.scale(ordinalLocs);
+
 
 map1.select(".legendLocs")
    .call(legendLocs);
 
-var ordinalBases = d3.scaleOrdinal()
-   .domain (['Base'])
-   .range(['rgb(0,0,0)']);
 
-var legendBases = d3legend.legendColor()
-						    .shape("path", d3.symbol().type(d3.symbolSquare).size(125)())
-						    .shapePadding(30)
-						    .cellFilter(function(d){ return d.label !== "e" })
-  							.scale(ordinalBases);
+// var ordinalBases = d3.scaleOrdinal()
+//    .domain (['Base'])
+//    .range(['rgb(0,0,0)']);
 
-map1.select(".legendBases")
-   .call(legendBases);
+// var legendBases = d3legend.legendColor()
+// 						    .shape("path", d3.symbol().type(d3.symbolSquare).size(125)())
+// 						    .shapePadding(30)
+// 						    .cellFilter(function(d){ return d.label !== "e" })
+//   							.scale(ordinalBases);
+
+// map1.select(".legendBases")
+//    .call(legendBases);
+
