@@ -30727,7 +30727,7 @@ var ordinalLocs = d3.scaleOrdinal()
 var legendLocs = d3legend.legendColor()
 						    .shape("path", d3.symbol().type(d3.symbolCircle).size(150)())	
 						    .shapePadding(5)
-							.title("Legend")
+							.title("SARH Bases")
   							.scale(ordinalLocs);
 
 
